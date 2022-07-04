@@ -16,7 +16,7 @@
         line-height: 40px;
       }
       .table {
-        font-family: 'Lucida Console';
+        font-family: 'ＭＳ 明朝';
       }
     </style>
   </head>
@@ -41,15 +41,17 @@
         <p class="text">赤い部分は、ファインダパターンといって、位置の基準になるもの。これにより反対から読んだりしても正確に読み取れるようになっている。位置を示すだけなので、読み込む際にはいらない情報だ。</p>
         <p class="text">QRコードには黒くなりすぎたり白くなりすぎたりしないように、マスクというものが施されている。マスクの種類は青い部分に書かれている。白い部分を0、黒い部分を1として左から読んでいくと、「101」となるので、マスクの種類は「101」となる。マスクの種類の表を見てみよう。</p>
         <table border="1",class="table">
-          <tr><th>マスクの種類</th><th>色が反転する条件</th></tr>
-          <tr><th>000</th><th>(i + j) % 2 = 0</th></tr>
-          <tr><th>001</th><th>i % 2 = 0</th></tr>
-          <tr><th>010</th><th>j % 3 = 0</th></tr>
-          <tr><th>011</th><th>(i + j) % 3 = 0</th></tr>
-          <tr><th>100</th><th>(i ÷ 2 + j ÷ 3) % 2 = 0</th></tr>
-          <tr><th>101</th><th>(i × j) % 2 + (i × j) % 3 = 0</th></tr>
-          <tr><th>110</th><th>((i × j) % 3 + i × j) % 2 = 0</th></tr>
-          <tr><th>110</th><th>((i × j) % 3 + i + j) % 2 = 0</th></tr>
+          <tbody class="table">
+            <tr><th>マスクの種類</th><th>色が反転する条件</th></tr>
+            <tr><th>000</th><th>(i + j) % 2 = 0</th></tr>
+            <tr><th>001</th><th>i % 2 = 0</th></tr>
+            <tr><th>010</th><th>j % 3 = 0</th></tr>
+            <tr><th>011</th><th>(i + j) % 3 = 0</th></tr>
+            <tr><th>100</th><th>(i ÷ 2 + j ÷ 3) % 2 = 0</th></tr>
+            <tr><th>101</th><th>(i × j) % 2 + (i × j) % 3 = 0</th></tr>
+            <tr><th>110</th><th>((i × j) % 3 + i × j) % 2 = 0</th></tr>
+            <tr><th>110</th><th>((i × j) % 3 + i + j) % 2 = 0</th></tr>
+          </tbody>
         </table>
       </div>
   </body>
