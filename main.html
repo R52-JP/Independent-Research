@@ -18,8 +18,8 @@
       .table {
         font-family: 'Verdana';
       }
-      .yoko1 li {
-        float: left;
+      .flex {
+        display: flex;
       }
      </style>
   </head>
@@ -62,7 +62,10 @@
         <img src="b1.jpg" alt="マスクを解いたQRコード" width="50%" height="70%">
         <p class="text">さて、いよいよ、文字を読み取っていこう。</p>
         <img src="b2.jpg" alt="文字ごとに分けられたQRコード" width="35%" height="70%">
-        <p class="text" class="yoko1">黒い部分を1、白い部分を0として読み取っていき、それを10進数になおし、文字に変換する。今回、10進数に直すのは</p><a href="https://hogehoge.tk/tool/number.html" class="text" class="yoko1">こちら</a><p class="text" class="yoko1">のサイト、文字に変換するのは</p><a href="http://charset.7jp.net/sjis.html" class="text" class="yoko1">こちら</a>
+    </div>
+    <div class="flex">
+        <p class="text">黒い部分を1、白い部分を0として読み取っていき、それを10進数になおし、文字に変換する。今回、10進数に直すのは</p><a href="https://hogehoge.tk/tool/number.html" class="text">こちら</a><p class="text">のサイト、文字に変換するのは</p><a href="http://charset.7jp.net/sjis.html" class="text">こちら</a>
+    </div>
         <table border="1",class="table">
           <tbody class="table">
             <tr><th>番号</th><th>0と1の情報</th><th>10進数の情報</th><th>情報</th></tr>
@@ -71,6 +74,5 @@
             <tr><th>③</th><th>0101 0011</th><th>83</th><th>S</th></tr>
           </tbody>
         </table>
-    </div>
   </body>
 </html>
